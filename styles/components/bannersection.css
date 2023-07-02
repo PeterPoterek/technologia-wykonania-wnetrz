@@ -1,0 +1,42 @@
+.bannersection {
+  display: none;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {
+ 
+} */
+
+/* md */
+@media (min-width: 768px) {
+  .bannersection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .bannersection__text {
+    width: 100%;
+    color: var(--clr-white);
+
+    font-size: var(--size-4xl);
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    background-image: url("../Images/banner-picture.png");
+    background-size: cover;
+  }
+}
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

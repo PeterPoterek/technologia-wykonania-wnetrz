@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Specjaliści w wykończeniach łazienek i kuchni. Oferujemy kompleksowe usługi remontowe dostosowane do Twoich potrzeb. Stwórz wymarzoną przestrzeń z naszym wykwalifikowanym zespołem."
+    />
+    <meta
+      name="keywords"
+      content="wykończenia łazienek, wykończenia kuchni, remonty łazienek, remonty kuchni, specjaliści w wykończeniach, profesjonalne wykończenia, usługi remontowe, projektowanie łazienek, projektowanie kuchni, kompleksowe usługi remontowe, wymarzona przestrzeń, profesjonalny zespół remontowy, specjaliści od wykończeń wnętrz"
+    />
+
+    <meta property="og:title" content="Technologia Wykonania Wnętrz" />
+    <meta
+      property="og:description"
+      content="Specjaliści w wykończeniach łazienek. Oferujemy kompleksowe usługi remontowe dostosowane do Twoich potrzeb. Stwórz wymarzoną przestrzeń z naszym wykwalifikowanym zespołem."
+    />
+    <meta property="og:image" content="/Images/picture1.png" />
+    <meta property="og:url" content="https://www.example.com" />
+    <meta property="og:type" content="website" />
+
+    <title>Technologia Wykonania Wnętrz</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+
+    <link rel="stylesheet" href="./styles/modern-normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/components/header.css" />
+    <link rel="stylesheet" href="./styles/components/welcomesection.css" />
+    <link rel="stylesheet" href="./styles/components/bannersection.css" />
+    <link rel="stylesheet" href="./styles/components/aboutsection.css" />
+    <link rel="stylesheet" href="./styles/components/creationsection.css" />
+    <link rel="stylesheet" href="./styles/components/gallerysection.css" />
+    <link rel="stylesheet" href="./styles/components/reviewsection.css" />
+    <link rel="stylesheet" href="./styles/components/contactsection.css" />
+    <link rel="stylesheet" href="./styles/components/footer.css" />
+    <link rel="stylesheet" href="./styles/components/gallerypage.css" />
+    <link rel="stylesheet" href="./styles/utils.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="src/main.js"></script>
+  </head>
+  <body>
+    <header class="headerbg">
+      <div class="header container">
+        <nav>
+          <ul class="header__menu">
+            <li>
+              <h2 class="header__title" onclick="scrollToSection('welcome')">
+                technologia wykonania wnętrz
+              </h2>
+            </li>
+            <li>
+              <ul class="header__nav">
+                <li>
+                  <button
+                    class="header__button"
+                    onclick="scrollToSection('about')"
+                  >
+                    O NAS
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="header__button"
+                    onclick="smoothPageTransition('gallery.html')"
+                  >
+                    GALERIA
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="header__button"
+                    onclick="scrollToSection('review')"
+                  >
+                    OPINIE
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="header__button"
+                    onclick="scrollToSection('contact')"
+                  >
+                    KONTAKT
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="header__phone">
+                <li>
+                  <img
+                    class="header__phoneicon"
+                    src="./Images/phone-icon.png"
+                    alt="Phone icon"
+                  />
+                </li>
+                <li><span class="header__phonenumber">696-075-595</span></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="welcome" class="container section welcomesection">
+        <div class="welcomesection__container">
+          <h1 class="welcomesection__title">Technologia Wykonania Wnętrz</h1>
+          <p class="welcomesection__description">
+            Profesjonalne remonty, doskonałe jakość, zadowoleni klienci.
+          </p>
+          <button
+            class="welcomesection__button"
+            onclick="scrollToSection('contact')"
+          >
+            <span class="welcomesection__buttontext">KONTAKT</span>
+          </button>
+        </div>
+        <img
+          class="welcomesection__image"
+          src="./Images/picture1.png"
+          alt="Image of bathroom with bathtub"
+        />
+      </section>
+
+      <section class="section bannersection">
+        <h2 class="bannersection__text">ZADZWOŃ I OTRZYMAJ BEZPŁATNĄ WYCENĘ</h2>
+      </section>
+
+      <section id="about" class="container section aboutsection">
+        <div class="about_content">
+          <h2 class="about_title">O NAS</h2>
+          <p class="about_description">
+            Jesteśmy doświadczoną firmą remontową, oferującą kompleksowe
+            wykończenie mieszkań i łazienek. Nasze usługi obejmują biały montaż,
+            malowanie, malowanie natryskowe, montaż paneli, drzwi, kominki oraz
+            kamień ozdobny Stegu i Stone. Doradzamy w wyborze materiałów, a
+            nasze doświadczenie w budownictwie sięga 1991 roku. Terminowość i
+            porządek to nasze główne cechy, a po zakończonym remoncie dbamy o
+            czystość. Zapraszamy do kontaktu, chętnie przyjedziemy
+            niezobowiązująco omówić zakres remontu.
+          </p>
+        </div>
+      </section>
+
+      <section class="container section creationsection">
+        <h2 class="creationsection__title">ETAPY TWORZENIA</h2>
+        <div class="creationsection__imagelist">
+          <img
+            class="lazy loading"
+            src="https://fakeimg.pl/384x515"
+            data-src="./Images/stock1.png"
+            alt="Image person of writing on sticky note"
+          />
+          <img
+            class="lazy loading"
+            src="https://fakeimg.pl/384x515"
+            data-src="./Images/stock2.png"
+            alt="Image of person cutting construction grout leftovers"
+          />
+          <img
+            class="lazy loading"
+            src="https://fakeimg.pl/384x515"
+            data-src="./Images/stock3.png"
+            alt="Image of person taking a picture of finished bathroom"
+          />
+        </div>
+        <p class="creationsection__description">
+          Ważne jest, aby pamiętać, że każdy remont może się różnić w zależności
+          od konkretnych wymagań klienta i zakresu prac. Nasza firma dostosuje
+          się do indywidualnych potrzeb i zapewni kompleksową obsługę na każdym
+          etapie procesu remontowego.
+        </p>
+      </section>
+
+      <section id="gallery" class="section gallerysection">
+        <div class="gallerysection__content">
+          <img
+            class="gallerysection__item lazy loading"
+            src="https://fakeimg.pl/478x400"
+            data-src="./Images/gallery1.png"
+            alt="Picture of bathroom with bathub"
+            onclick="smoothPageTransition('gallery.html')"
+          />
+          <img
+            class="gallerysection__item lazy loading"
+            src="https://fakeimg.pl/478x400"
+            data-src="./Images/gallery2.png"
+            alt="Picture of bathroom with 2 sinks and mirror"
+            onclick="smoothPageTransition('gallery.html')"
+          />
+          <img
+            class="gallerysection__item lazy loading"
+            src="https://fakeimg.pl/478x400"
+            data-src="./Images/gallery3.png"
+            alt="Picture of attic bathroom"
+            onclick="smoothPageTransition('gallery.html')"
+          />
+        </div>
+      </section>
+
+      <section id="review" class="container section reviewsection">
+        <h2 class="reviewsection__title">OPINIE</h2>
+        <ul class="reviewsection__list">
+          <li class="reviewsection__item">
+            <div class="reviewsection__item-content">
+              <h3 class="reviewsection__name">Beata B.</h3>
+              <img
+                class="reviewsection__star"
+                src="./Images/review-stars.png"
+                alt="5 star review icon"
+              />
+              <p class="reviewsection__text">
+                Super fachowcy, punktualni, odpowiedzialni, rzeczowi i bardzo
+                profesjonalni. Wykonawcy bardzo dokładni, rzetelni i solidni.
+                Panowie Piotr i Paweł to zgrany zespół. Terminowo i kompleksowo
+                wykończyli mieszkanie. Są bezkonfliktowi, służą doświadczeniem i
+                doradztwem. Dla mnie super! Polecam na 120%.
+              </p>
+            </div>
+          </li>
+          <li class="reviewsection__item">
+            <div class="reviewsection__item-content">
+              <h3 class="reviewsection__name">Michał M.</h3>
+              <img
+                class="reviewsection__star"
+                src="./Images/review-stars.png"
+                alt="5 star review icon"
+              />
+              <p class="reviewsection__text">
+                Dokładni, terminowi, doświadczeni i profesjonalni. Lepszej ekipy
+                ze świecą szukać :) jesteśmy stałymi klientami, Piotrek i Paweł
+                zrobili dla nas remont 2 łazienek, przedpokoju, wydzielili
+                pralnie z części salonu, wykonali ścianę z cegieł i
+                wyremontowali drugie mieszkanie dla mojej mamy. Dla nich nie ma
+                rzeczy niemożliwych - zrobią wszystko. Nie było potrzeby żadnych
+                poprawek i zawsze byliśmy mega zadowoleni. Z czystym sumieniem
+                polecamy!!!
+              </p>
+            </div>
+          </li>
+          <li class="reviewsection__item">
+            <div class="reviewsection__item-content">
+              <h3 class="reviewsection__name">Regina K.</h3>
+              <img
+                class="reviewsection__star"
+                src="./Images/review-stars.png"
+                alt="5 star review icon"
+              />
+              <p class="reviewsection__text">
+                Świetne wykonanie projektu oraz profesjonalne doradztwo,
+                serdecznie polecam
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="container section contactsection">
+        <h2 class="contactsection__title">KONTAKT</h2>
+        <div class="contactsection__map">
+          <div class="contactsection__map-border">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160.22591565115675!2d19.87463532149816!3d50.018577507700385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165c5b4e7d4ab3%3A0x7bdb06cb50792106!2sSkotnicka%2082A%2C%2030-394%20Krak%C3%B3w!5e0!3m2!1sen!2spl!4v1686664036581!5m2!1sen!2spl!15z"
+              width="1000"
+              height="560"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="contactsection__wrapper">
+          <div>
+            <ul class="contactsection__list-content">
+              <li class="contactsection__list-label">Telefon</li>
+              <li class="contactsection__list-label">E-mail</li>
+              <li class="contactsection__list-label">Adres</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="contactsection__list-content">
+              <li class="contactsection__list-text">696075595</li>
+              <li class="contactsection__list-text">Skotnicka 82 A, Kraków</li>
+              <li class="contactsection__list-text">piotrpoterek@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="section footer">
+      <div class="footer__content-left">
+        <h2 class="footer__title">Dane rejestrowe</h2>
+        <div class="footer__container">
+          <div class="footer__item">
+            <h3 class="footer__label">Firma</h3>
+            <div class="footer__wrapper">
+              <ul class="footer__list">
+                <li class="footer_listitem">Imię</li>
+                <li class="footer_listitem">Nazwisko</li>
+                <li class="footer_listitem">NIP</li>
+              </ul>
+
+              <ul class="footer__list-right">
+                <li class="footer_listitem">Piotr</li>
+                <li class="footer_listitem">POTEREK</li>
+                <li class="footer_listitem">9441361022</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__item">
+            <h3 class="footer__label">Adres</h3>
+            <div class="footer__wrapper">
+              <ul class="footer__list">
+                <li class="footer_listitem">Kraj</li>
+                <li class="footer_listitem">Skotnicka 82 A</li>
+              </ul>
+
+              <ul class="footer__list-right">
+                <li class="footer_listitem">Polska</li>
+                <li class="footer_listitem">Kraków</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__item">
+            <h3 class="footer__label">Kontakt</h3>
+            <div class="footer__wrapper">
+              <ul class="footer__list">
+                <li class="footer_listitem">Telefon</li>
+                <li class="footer_listitem">E-mail</li>
+              </ul>
+
+              <ul class="footer__list-right">
+                <li class="footer_listitem">696075595</li>
+                <li class="footer_listitem">poterpiotr@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__content-right">
+        <div class="footer__content-contactinfo">
+          <p class="footer__content-label">Kontakt w dni robocze od</p>
+          <p class="footer__content-hours">9-19</p>
+        </div>
+        <div class="footer__content-createdby">
+          <p class="footer__content-createdbytext">CREATED BY</p>
+          <p class="footer__content-highlight">EnchantedDesign</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
