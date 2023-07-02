@@ -16,18 +16,21 @@ function scrollToSection(sectionId, offset) {
 function smoothPageTransition(url) {
   document.body.classList.add("page-transition");
 
-  // Wait for the transition effect to complete
   setTimeout(function () {
     window.location.href = url;
   }, 300);
 }
+if (window.location.pathname.includes("gallery.html")) {
+  document.querySelector(".header__title").onclick = function (event) {
+    event.preventDefault();
+    smoothPageTransition("index.html");
+  };
+} else if (window.location.pathname.includes("index.html")) {
+  document.querySelector(".header__title").onclick = function () {
+    scrollToSection("welcome");
+  };
+}
 
-document.querySelector(".header__title").onclick = function (event) {
-  event.preventDefault();
-  smoothPageTransition("index.html");
-};
-
-//Toggle images in gallery to fullscreen when clicked
 const images = document.querySelectorAll(".gallery__item");
 
 images.forEach((image) => {
