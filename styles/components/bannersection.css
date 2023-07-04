@@ -27,7 +27,7 @@
     padding-top: 5rem;
     padding-bottom: 5rem;
 
-    background-image: url("../Images/banner-picture.png");
+    background-image: url("/Images/banner-picture.png");
     background-size: cover;
   }
 }
