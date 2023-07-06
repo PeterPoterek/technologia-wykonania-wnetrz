@@ -35,6 +35,37 @@
   filter: blur(0) grayscale(0);
   transition: 0.2s ease-in-out;
 }
+
+.Fullscreen {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.FullImage {
+  padding: 2rem;
+
+  width: 70rem;
+  height: 50rem;
+}
+.CloseButton {
+  position: absolute;
+
+  top: 5rem;
+  right: 20rem;
+
+  font-size: var(--size-5xl);
+  color: var(--clr-white);
+  cursor: pointer;
+}
 /* xs */
 @media (min-width: 475px) {
   .container {
