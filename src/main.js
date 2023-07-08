@@ -31,15 +31,17 @@ if (window.location.pathname.includes("gallery.html")) {
   };
 }
 
-//Fullscreen on click
+const images = document.querySelectorAll(".gallery__item");
 
-function showFullScreen(ImgLink) {
-  document.querySelector(".FullImage").src = ImgLink;
-  document.querySelector(".Fullscreen").style.display = "flex";
+images.forEach((image) => {
+  image.addEventListener("click", toggleFullscreen);
+});
+
+function toggleFullscreen(event) {
+  const image = event.target;
+  image.classList.toggle("fullscreen");
 }
-function closeFullScreen() {
-  document.querySelector(".Fullscreen").style.display = "none";
-}
+
 //lazy loading
 const lazyImages = document.querySelectorAll(".lazy");
 const observer = new IntersectionObserver((entries, observer) => {
