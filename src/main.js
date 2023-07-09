@@ -26,7 +26,7 @@ if (window.location.pathname.includes("gallery.html")) {
     smoothPageTransition("index.html");
   };
 } else if (window.location.pathname.includes("index.html")) {
-  document.querySelector(".header__title").onclick = function () {
+  document.querySelector(".header__logo").onclick = function () {
     scrollToSection("welcome");
   };
 }

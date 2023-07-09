@@ -24,8 +24,15 @@
   list-style: none;
   padding: 0;
 }
+.header__logo {
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.header__logo:hover {
+  transform: scale(1.1);
+}
 
-.header__title {
+/* .header__title {
   cursor: pointer;
   text-decoration: none;
   color: var(--clr-black);
@@ -38,7 +45,7 @@
 }
 .header__title:hover {
   transform: scale(1.1);
-}
+} */
 
 .header__nav {
   list-style: none;
