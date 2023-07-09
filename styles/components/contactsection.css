@@ -36,7 +36,7 @@
 }
 .contactsection__list-text {
   font-size: var(--size-lg);
-  font-weight: 600;
+  font-weight: 500;
 }
 /* xs */
 /* @media (min-width: 475px) {} */
@@ -59,7 +59,7 @@
     border: 5px solid black;
   }
   .contactsection__wrapper {
-    gap: 3rem;
+    gap: 6rem;
   }
   .contactsection__list-content {
     gap: 2rem;
@@ -70,7 +70,7 @@
   }
   .contactsection__list-text {
     font-size: var(--size-2xl);
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 
