@@ -25,6 +25,7 @@
   padding: 0;
 }
 .header__logo {
+  display: none;
   cursor: pointer;
   transition: transform 0.5s;
 }
@@ -93,6 +94,9 @@
   }
   .header__nav {
     gap: 0.5em;
+  }
+  .header__logo {
+    display: block;
   }
   .header__title {
     display: block;
