@@ -43,6 +43,8 @@
   display: inline-block;
   max-width: 15rem;
 
+  text-decoration: none;
+
   border: 2px solid #101828;
   border-radius: 5rem;
 
@@ -58,6 +60,7 @@
   background-color: var(--clr-hovergray);
 }
 .contactsection__buttontext {
+  text-decoration: none;
   color: var(--clr-black);
   font-weight: 700;
 
