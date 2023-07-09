@@ -6,6 +6,7 @@
 .welcomesection__content {
   display: flex;
   gap: 7rem;
+  margin-left: 0;
 }
 .welcomesection__container {
   position: relative;
@@ -36,7 +37,7 @@
 }
 .welcomesection__text-title {
   color: var(--clr-black);
-  font-weight: 700;
+  font-weight: 600;
 
   text-align: center;
 
@@ -44,7 +45,7 @@
 }
 .welcomesection__description {
   color: var(--clr-black);
-  font-weight: 600;
+  font-weight: 500;
 
   text-align: left;
 
@@ -78,9 +79,6 @@
 }
 /* xs */
 @media (min-width: 475px) {
-  .welcomesection__container {
-    align-items: stretch;
-  }
   .welcomesection__title {
     font-size: var(--size-6xl);
   }
