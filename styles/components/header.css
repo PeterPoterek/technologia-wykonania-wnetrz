@@ -46,7 +46,11 @@
   display: flex;
   gap: 1.5em;
 }
-
+.welcomesection__button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .header__button {
   border: none;
   background-color: transparent;
@@ -163,6 +167,7 @@
     padding: 0;
     gap: 2.5em;
   }
+
   .header__button {
     font-size: var(--size-xl);
   }

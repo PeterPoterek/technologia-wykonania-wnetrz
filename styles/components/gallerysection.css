@@ -28,8 +28,11 @@
   }
   .gallerysection__content {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0.5rem;
   }
   .gallerysection__item {
-    flex-basis: 33.3%;
+    flex-basis: calc(100% / 5);
   }
 }
