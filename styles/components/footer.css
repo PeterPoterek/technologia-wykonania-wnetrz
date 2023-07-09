@@ -103,7 +103,7 @@
   }
   .footer__content-createdby {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
   }
   .footer__content-hours {
     display: block;
@@ -120,30 +120,30 @@
     gap: 2rem;
   }
   .footer__title {
-    font-size: var(--size-lg);
+    font-size: var(--size-base);
     font-weight: 700;
   }
   .footer__label {
-    font-size: var(--size-lg);
+    font-size: var(--size-base);
     font-weight: 700;
   }
   .footer_listitem {
-    font-size: var(--size-base);
+    font-size: var(--size-sm);
     font-weight: 700;
   }
   .footer__content-label {
-    font-size: var(--size-base);
+    font-size: var(--size-sm);
     font-weight: 700;
   }
   .footer__content-hours {
-    font-size: var(--size-2xl);
+    font-size: var(--size-xl);
     font-weight: 700;
   }
   .footer__content-createdbytext {
-    font-size: var(--size-base);
+    font-size: var(--size-sm);
   }
   .footer__content-highlight {
-    font-size: var(--size-xl);
+    font-size: var(--size-lg);
     font-weight: 700;
   }
 }
