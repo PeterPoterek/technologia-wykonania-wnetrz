@@ -14,8 +14,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .header__menu {
@@ -68,7 +68,7 @@
   margin: 0;
 
   color: var(--clr-black);
-  font-size: var(--size-lg);
+  font-size: var(--size-base);
 
   text-decoration: none;
   font-weight: 700;

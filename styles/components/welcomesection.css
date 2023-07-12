@@ -1,7 +1,7 @@
 .welcomesection {
   display: flex;
   justify-content: center;
-  padding-top: 5rem;
+  padding-top: 1rem;
 }
 .welcomesection__content {
   display: flex;
@@ -28,10 +28,10 @@
 .welcomesection__title {
   text-align: center;
   color: var(--clr-black);
-  font-size: var(--size-5xl);
+  font-size: var(--size-4xl);
   text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
 
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
 
   font-family: "Bebas Neue";
 }
@@ -41,7 +41,7 @@
 
   text-align: center;
 
-  font-size: var(--size-xl);
+  font-size: var(--size-base);
 }
 .welcomesection__description {
   color: var(--clr-black);
@@ -49,7 +49,7 @@
 
   text-align: left;
 
-  font-size: var(--size-base);
+  font-size: var(--size-sm);
   max-width: 40rem;
 }
 
@@ -61,6 +61,8 @@
   border-radius: 5rem;
 
   cursor: pointer;
+
+  margin-top: 2rem;
   padding: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -75,12 +77,16 @@
   color: var(--clr-black);
   font-weight: 700;
 
-  font-size: var(--size-2xl);
+  font-size: var(--size-xl);
 }
 /* xs */
 @media (min-width: 475px) {
+  .welcomesection {
+    padding-top: 5rem;
+  }
   .welcomesection__title {
     font-size: var(--size-6xl);
+    margin-bottom: 8rem;
   }
   .welcomesection__text-title {
     text-align: left;
@@ -105,6 +111,9 @@
 
 /* 2xl */
 @media (min-width: 1536px) {
+  .welcomesection__button {
+    margin-top: 0rem;
+  }
   .welcomesection__image {
     display: inline-block;
     margin-top: -5rem;
