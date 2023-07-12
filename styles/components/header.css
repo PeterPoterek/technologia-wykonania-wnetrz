@@ -89,6 +89,10 @@
 
 /* xs */
 @media (min-width: 475px) {
+  .header {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
   .header__menu {
     gap: 1em;
   }

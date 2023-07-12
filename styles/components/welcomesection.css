@@ -95,8 +95,20 @@
 }
 
 /* sm */
-/* @media (min-width: 640px) {
-} */
+@media (min-width: 640px) {
+  .welcomesection__title {
+    font-size: var(--size-6xl);
+  }
+  .welcomesection__text-title {
+    font-size: var(--size-2xl);
+  }
+  .welcomesection__description {
+    font-size: var(--size-base);
+  }
+  .welcomesection__buttontext {
+    font-size: var(--size-2xl);
+  }
+}
 
 /* md */
 /* @media (min-width: 768px) {} */
