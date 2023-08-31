@@ -47,7 +47,7 @@
   color: var(--clr-black);
   font-weight: 500;
 
-  text-align: left;
+  text-align: center;
 
   font-size: var(--size-sm);
   max-width: 40rem;
@@ -104,6 +104,7 @@
   }
   .welcomesection__description {
     font-size: var(--size-base);
+    text-align: left;
   }
   .welcomesection__buttontext {
     font-size: var(--size-2xl);

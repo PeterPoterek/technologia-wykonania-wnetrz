@@ -31,6 +31,7 @@ if (window.location.pathname.includes("gallery.html")) {
   };
 }
 
+//Handle gallery click
 const images = document.querySelectorAll(".gallery__item");
 
 images.forEach((image) => {
