@@ -1,0 +1,22 @@
+.certificatesection__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.certificatesection__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  gap: 1rem;
+
+  margin-top: 10rem;
+}
+.certificatesection__certificate {
+  width: 100vh;
+  height: 600px;
+
+  -webkit-box-shadow: 8px 8px 24px -12px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 8px 8px 24px -12px rgba(0, 0, 0, 1);
+  box-shadow: 8px 8px 24px -12px rgba(0, 0, 0, 1);
+}
