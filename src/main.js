@@ -60,3 +60,6 @@ const observer = new IntersectionObserver((entries, observer) => {
 lazyImages.forEach((img) => {
   observer.observe(img);
 });
+
+// simple lightbox
+const simpleLightbox = new SimpleLightbox(".gallery__container a", {});
