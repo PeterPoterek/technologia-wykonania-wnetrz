@@ -12,6 +12,8 @@
 .creationsection__title {
   font-size: var(--size-4xl);
   font-weight: 700;
+
+  text-align: center;
 }
 .creationsection__description {
   font-size: var(--size-xl);
