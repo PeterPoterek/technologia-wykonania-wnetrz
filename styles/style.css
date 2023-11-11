@@ -30,6 +30,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding: 10rem;
 }
 
 body {
@@ -38,6 +39,8 @@ body {
   background-color: var(--clr-white);
   background-image: url("../Images/noise.png");
   color: var(--clr-black);
+
+  overflow-x: hidden;
 }
 body.page-transition {
   opacity: 0;

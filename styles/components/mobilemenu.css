@@ -29,6 +29,7 @@
 
   padding: 1rem;
 }
+
 .mobilemenu__listitem {
   display: flex;
   justify-content: center;
@@ -63,18 +64,21 @@
 
   gap: 3.5rem;
 }
+.mobilemenu__navitem {
+  color: var(--clr-black);
+  font-size: var(--size-2xl);
+  font-weight: 600;
+
+  text-decoration: none;
+
+  padding: 0.5rem;
+}
 .mobilemenu__closebutton {
   position: absolute;
   top: 0;
   right: 0;
 
   margin: 2rem;
-}
-.mobilemenu__button {
-  font-size: var(--size-2xl);
-
-  font-weight: 600;
-  padding: 0.5rem;
 }
 
 @media (min-width: 768px) {
