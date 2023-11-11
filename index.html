@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="./styles/components/contactsection.css" />
     <link rel="stylesheet" href="./styles/components/footer.css" />
     <link rel="stylesheet" href="./styles/components/gallerypage.css" />
+    <link rel="stylesheet" href="./styles/components/mobilemenu.css" />
     <link rel="stylesheet" href="./styles/utils.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -48,7 +49,7 @@
 
   <body>
     <header class="headerbg">
-      <div class="header container">
+      <!-- <div class="header container">
         <nav>
           <menu class="header__menu">
             <li>
@@ -83,6 +84,23 @@
             </li>
           </menu>
         </nav>
+      </div> -->
+
+      <div class="mobilemenu">
+        <div class="container">
+          <ul class="mobilemenu__list">
+            <li>
+              <img class="header__logo" src="./Images/logo.png" onclick="scrollToSection('welcome')" alt="Logo" />
+            </li>
+            <li>
+              <button>
+                <svg>
+                  <use href="./Images/logo.png#icon-hamburger"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
