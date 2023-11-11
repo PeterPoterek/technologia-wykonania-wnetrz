@@ -14,9 +14,34 @@
 }
 .certificatesection__certificate {
   width: 100vh;
-  height: 600px;
+  height: 300px;
 
   -webkit-box-shadow: 8px 8px 24px -12px rgba(0, 0, 0, 1);
   -moz-box-shadow: 8px 8px 24px -12px rgba(0, 0, 0, 1);
   box-shadow: 8px 8px 24px -12px rgba(0, 0, 0, 1);
 }
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+  .certificatesection__certificate {
+    height: 500px;
+  }
+}
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+@media (min-width: 1280px) {
+  .certificatesection__certificate {
+    height: 600px;
+  }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
