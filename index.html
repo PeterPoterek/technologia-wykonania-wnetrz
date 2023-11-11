@@ -89,13 +89,15 @@
       <div class="mobilemenu">
         <div class="container">
           <ul class="mobilemenu__list">
-            <li>
-              <img class="header__logo" src="./Images/logo.png" onclick="scrollToSection('welcome')" alt="Logo" />
+            <li class="mobilemenu__listitem">
+              <a href="/" onclick="scrollToSection('welcome')">
+                <img src="./Images/logo.png" alt="Logo" />
+              </a>
             </li>
-            <li>
-              <button>
-                <svg>
-                  <use href="./Images/logo.png#icon-hamburger"></use>
+            <li class="mobilemenu__listitem">
+              <button class="mobilemenu__button">
+                <svg width="50" height="50">
+                  <use href="./Images/icons.svg#icon-hamburger"></use>
                 </svg>
               </button>
             </li>

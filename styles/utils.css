@@ -27,6 +27,9 @@
 .section {
   margin-top: 5rem;
 }
+.section:first-child {
+  margin-top: 6.5rem;
+}
 
 .loading {
   filter: blur(40px) grayscale(100%);
