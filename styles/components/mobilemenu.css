@@ -1,3 +1,7 @@
+.mobilemenu__container {
+  width: 100%;
+}
+
 .mobilemenu__list {
   list-style: none;
 
@@ -64,4 +68,16 @@
 
   font-weight: 600;
   padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .mobilemenu__list {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .mobilemenu__list {
+    display: none;
+  }
 }

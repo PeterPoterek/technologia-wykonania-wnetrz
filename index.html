@@ -49,7 +49,7 @@
 
   <body>
     <header class="headerbg">
-      <!-- <div class="header container">
+      <div class="header container">
         <nav>
           <menu class="header__menu">
             <li>
@@ -84,25 +84,26 @@
             </li>
           </menu>
         </nav>
-      </div> -->
+      </div>
+      <div class="mobilemenu__container">
+        <ul class="mobilemenu__list">
+          <li class="mobilemenu__listitem">
+            <a href="/" onclick="scrollToSection('welcome')">
+              <img src="./Images/logo.png" alt="Logo" />
+            </a>
+          </li>
+          <li class="mobilemenu__listitem">
+            <button class="mobilemenu__hamburgerbutton">
+              <svg width="50" height="50">
+                <use href="./Images/icons.svg#icon-hamburger"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
 
-      <div class="mobilemenu">
-        <div class="container">
-          <ul class="mobilemenu__list">
-            <li class="mobilemenu__listitem">
-              <a href="/" onclick="scrollToSection('welcome')">
-                <img src="./Images/logo.png" alt="Logo" />
-              </a>
-            </li>
-            <li class="mobilemenu__listitem">
-              <button class="mobilemenu__hamburgerbutton">
-                <svg width="50" height="50">
-                  <use href="./Images/icons.svg#icon-hamburger"></use>
-                </svg>
-              </button>
-            </li>
-          </ul>
-        </div>
+      <!-- <div class="mobilemenu">
+        <div class="container"></div>
         <div class="mobilemenu__nav">
           <button class="mobilemenu__closebutton">
             <svg width="25" height="25">
@@ -127,7 +128,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
     </header>
 
     <main>
