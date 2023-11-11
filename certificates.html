@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="./styles/components/contactsection.css" />
     <link rel="stylesheet" href="./styles/components/footer.css" />
     <link rel="stylesheet" href="./styles/components/gallerypage.css" />
+    <link rel="stylesheet" href="./styles/components/mobilemenu.css" />
     <link rel="stylesheet" href="./styles/components/certificatespage.css" />
     <link rel="stylesheet" href="./styles/utils.css" />
 
@@ -51,33 +52,31 @@
     <header class="headerbg">
       <div class="header container">
         <nav>
-          <ul class="header__menu">
+          <menu class="header__menu">
             <li>
               <a class="header__title" href="index.html" onclick="smoothPageTransition(event, 'index.html')">
                 <img class="header__logo" src="./Images/logo.png" onclick="scrollToSection('welcome')" alt="Logo"
               /></a>
             </li>
-
             <li>
               <ul class="header__nav">
                 <li>
-                  <a class="header__button" href="index.html#about">O NAS</a>
+                  <button class="header__button" onclick="scrollToSection('about')">O NAS</button>
                 </li>
                 <li>
-                  <a class="header__button" href="index.html#gallery">GALERIA</a>
+                  <button class="header__button" onclick="smoothPageTransition('gallery.html')">GALERIA</button>
                 </li>
                 <li>
-                  <a class="header__button" href="index.html#review">OPINIE</a>
+                  <button class="header__button" onclick="scrollToSection('review')">OPINIE</button>
                 </li>
                 <li>
-                  <a class="header__button" href="index.html#contact">KONTAKT</a>
+                  <button class="header__button" onclick="scrollToSection('contact')">KONTAKT</button>
                 </li>
                 <li>
-                  <a class="header__button" href="#">CERTYFIKATY</a>
+                  <button class="header__button" onclick="smoothPageTransition('certificates.html')">CERTYFIKATY</button>
                 </li>
               </ul>
             </li>
-
             <li>
               <ul class="header__phone">
                 <li>
@@ -86,13 +85,51 @@
                 <li><span class="header__phonenumber">696-075-595</span></li>
               </ul>
             </li>
-          </ul>
+          </menu>
         </nav>
+      </div>
+      <div class="mobilemenu__container">
+        <ul class="mobilemenu__list">
+          <li class="mobilemenu__listitem">
+            <img src="./Images/logo.png" alt="Logo" onclick="scrollToSection('certificates')" />
+          </li>
+          <li class="mobilemenu__listitem">
+            <button id="mobile-open" class="mobilemenu__hamburgerbutton">
+              <svg width="50" height="50">
+                <use href="./Images/icons.svg#icon-hamburger"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div id="mobile-menu" class="mobilemenu">
+        <div class="mobilemenu__nav">
+          <button id="mobile-close" class="mobilemenu__closebutton">
+            <svg width="25" height="25">
+              <use href="./Images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="mobilemenu__navlist">
+            <li>
+              <a href="index.html#about" class="mobilemenu__navitem">O NAS</a>
+            </li>
+            <li>
+              <a href="gallery.html" class="mobilemenu__navitem">GALERIA</a>
+            </li>
+            <li>
+              <a href="index.html#review" class="mobilemenu__navitem">OPINIE</a>
+            </li>
+            <li>
+              <a href="index.html#contact" class="mobilemenu__navitem">KONTAKT</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="certificatesection">
+      <section id="certificates" class="certificatesection">
         <div class="certificatesection__container">
           <div class="certificatesection__wrapper">
             <img class="certificatesection__certificate" src="./Images/certificates/Piotr Poterek.jpg" alt="" />
