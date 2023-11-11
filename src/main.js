@@ -89,11 +89,6 @@ lazyImages.forEach((img) => {
   openMenuBtn.addEventListener("click", toggleMenu);
   closeMenuBtn.addEventListener("click", toggleMenu);
 
-  console.dir(mobileMenu);
-  console.dir(openMenuBtn);
-  console.dir(closeMenuBtn);
-  console.dir(mobileMenuLinks);
-
   mobileMenuLinks.forEach((link) => {
     link.addEventListener("click", closeMoblieMenu);
   });
