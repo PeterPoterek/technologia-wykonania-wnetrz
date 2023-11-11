@@ -66,7 +66,7 @@ lazyImages.forEach((img) => {
   const mobileMenu = document.querySelector("#mobile-menu");
   const openMenuBtn = document.querySelector("#mobile-open");
   const closeMenuBtn = document.querySelector("#mobile-close");
-  const mobileMenuLinks = document.querySelectorAll("#mobile-menu a");
+  const mobileMenuLinks = document.querySelectorAll("#mobile-menu button");
 
   const toggleMenu = () => {
     const isMenuOpen = openMenuBtn.getAttribute("aria-expanded") === "true" || false;
