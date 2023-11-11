@@ -95,11 +95,35 @@
               </a>
             </li>
             <li class="mobilemenu__listitem">
-              <button class="mobilemenu__button">
+              <button class="mobilemenu__hamburgerbutton">
                 <svg width="50" height="50">
                   <use href="./Images/icons.svg#icon-hamburger"></use>
                 </svg>
               </button>
+            </li>
+          </ul>
+        </div>
+        <div class="mobilemenu__nav">
+          <button class="mobilemenu__closebutton">
+            <svg width="25" height="25">
+              <use href="./Images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="mobilemenu__navlist">
+            <li>
+              <button class="mobilemenu__button" onclick="scrollToSection('about')">O NAS</button>
+            </li>
+            <li>
+              <button class="mobilemenu__button" onclick="smoothPageTransition('gallery.html')">GALERIA</button>
+            </li>
+            <li>
+              <button class="mobilemenu__button" onclick="scrollToSection('review')">OPINIE</button>
+            </li>
+            <li>
+              <button class="mobilemenu__button" onclick="scrollToSection('contact')">KONTAKT</button>
+            </li>
+            <li>
+              <button class="mobilemenu__button" onclick="smoothPageTransition('certificates.html')">CERTYFIKATY</button>
             </li>
           </ul>
         </div>
