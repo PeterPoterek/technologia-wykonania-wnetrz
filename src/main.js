@@ -61,9 +61,6 @@ lazyImages.forEach((img) => {
   observer.observe(img);
 });
 
-// simple lightbox
-const simpleLightbox = new SimpleLightbox(".gallery__container a", {});
-
 // mobile menu
 (() => {
   const mobileMenu = document.querySelector("#mobile-menu");
@@ -91,6 +88,11 @@ const simpleLightbox = new SimpleLightbox(".gallery__container a", {});
 
   openMenuBtn.addEventListener("click", toggleMenu);
   closeMenuBtn.addEventListener("click", toggleMenu);
+
+  console.dir(mobileMenu);
+  console.dir(openMenuBtn);
+  console.dir(closeMenuBtn);
+  console.dir(mobileMenuLinks);
 
   mobileMenuLinks.forEach((link) => {
     link.addEventListener("click", closeMoblieMenu);

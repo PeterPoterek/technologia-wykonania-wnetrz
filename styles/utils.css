@@ -38,6 +38,11 @@
   filter: blur(0) grayscale(0);
   transition: 0.2s ease-in-out;
 }
+
+#mobile-menu.is-open {
+  transform: translateX(0);
+}
+
 /* xs */
 @media (min-width: 475px) {
   .container {
