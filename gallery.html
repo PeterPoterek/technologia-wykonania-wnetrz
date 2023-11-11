@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="./styles/components/contactsection.css" />
     <link rel="stylesheet" href="./styles/components/footer.css" />
     <link rel="stylesheet" href="./styles/components/gallerypage.css" />
+    <link rel="stylesheet" href="./styles/components/mobilemenu.css" />
     <link rel="stylesheet" href="./styles/utils.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,38 +46,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="./styles/simple-lightbox.css" />
+
+    <script defer src="src/lightbox.js"></script>
+    <script defer src="src/main.js"></script>
   </head>
   <body>
     <header class="headerbg">
       <div class="header container">
         <nav>
-          <ul class="header__menu">
+          <menu class="header__menu">
             <li>
               <a class="header__title" href="index.html" onclick="smoothPageTransition(event, 'index.html')">
                 <img class="header__logo" src="./Images/logo.png" onclick="scrollToSection('welcome')" alt="Logo"
               /></a>
             </li>
-
             <li>
               <ul class="header__nav">
                 <li>
-                  <a class="header__button" href="index.html#about">O NAS</a>
+                  <button class="header__button" onclick="scrollToSection('about')">O NAS</button>
                 </li>
                 <li>
-                  <a class="header__button" href="index.html#gallery">GALERIA</a>
+                  <button class="header__button" onclick="smoothPageTransition('gallery.html')">GALERIA</button>
                 </li>
                 <li>
-                  <a class="header__button" href="index.html#review">OPINIE</a>
+                  <button class="header__button" onclick="scrollToSection('review')">OPINIE</button>
                 </li>
                 <li>
-                  <a class="header__button" href="index.html#contact">KONTAKT</a>
+                  <button class="header__button" onclick="scrollToSection('contact')">KONTAKT</button>
                 </li>
                 <li>
-                  <a class="header__button" href="certificates.html" onclick="smoothPageTransition('certificates.html')">CERTYFIKATY</a>
+                  <button class="header__button" onclick="smoothPageTransition('certificates.html')">CERTYFIKATY</button>
                 </li>
               </ul>
             </li>
-
             <li>
               <ul class="header__phone">
                 <li>
@@ -85,12 +87,54 @@
                 <li><span class="header__phonenumber">696-075-595</span></li>
               </ul>
             </li>
-          </ul>
+          </menu>
         </nav>
       </div>
+      <div class="mobilemenu__container">
+        <ul class="mobilemenu__list">
+          <li class="mobilemenu__listitem">
+            <img src="./Images/logo.png" alt="Logo" onclick="scrollToSection('gallery')" />
+          </li>
+          <li class="mobilemenu__listitem">
+            <button id="mobile-open" class="mobilemenu__hamburgerbutton">
+              <svg width="50" height="50">
+                <use href="./Images/icons.svg#icon-hamburger"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div id="mobile-menu" class="mobilemenu">
+        <div class="mobilemenu__nav">
+          <button id="mobile-close" class="mobilemenu__closebutton">
+            <svg width="25" height="25">
+              <use href="./Images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="mobilemenu__navlist">
+            <li>
+              <button class="mobilemenu__button" onclick="scrollToSection('about')">O NAS</button>
+            </li>
+            <li>
+              <button class="mobilemenu__button" onclick="smoothPageTransition('gallery.html')">GALERIA</button>
+            </li>
+            <li>
+              <button class="mobilemenu__button" onclick="scrollToSection('review')">OPINIE</button>
+            </li>
+            <li>
+              <button class="mobilemenu__button" onclick="scrollToSection('contact')">KONTAKT</button>
+            </li>
+            <li>
+              <button class="mobilemenu__button" onclick="smoothPageTransition('certificates.html')">CERTYFIKATY</button>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
+
     <main>
-      <section class="section container gallery">
+      <section id="gallery" class="section container gallery">
         <div class="gallery_wrapper">
           <div class="gallery__container">
             <a href="./Images/gallery/CAM00641.jpg"><img class="gallery__item" src="./Images/gallery/CAM00641.jpg" alt="gallery image" /></a>
@@ -355,7 +399,5 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script type="module" src="src/lightbox.js"></script>
-    <script type="module" src="src/main.js"></script>
   </body>
 </html>

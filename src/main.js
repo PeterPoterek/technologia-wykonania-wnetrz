@@ -20,28 +20,16 @@ function smoothPageTransition(url) {
     window.location.href = url;
   }, 300);
 }
-if (window.location.pathname.includes("gallery.html")) {
-  document.querySelector(".header__title").onclick = function (event) {
-    event.preventDefault();
-    smoothPageTransition("index.html");
-  };
-} else if (window.location.pathname.includes("index.html")) {
-  document.querySelector(".header__logo").onclick = function () {
-    scrollToSection("welcome");
-  };
-}
-
-//Handle gallery click
-const images = document.querySelectorAll(".gallery__item");
-
-images.forEach((image) => {
-  image.addEventListener("click", toggleFullscreen);
-});
-
-function toggleFullscreen(event) {
-  const image = event.target;
-  image.classList.toggle("fullscreen");
-}
+// if (window.location.pathname.includes("gallery.html")) {
+//   document.querySelector(".header__title").onclick = function (event) {
+//     event.preventDefault();
+//     smoothPageTransition("index.html");
+//   };
+// } else if (window.location.pathname.includes("index.html")) {
+//   document.querySelector(".header__logo").onclick = function () {
+//     scrollToSection("welcome");
+//   };
+// }
 
 //lazy loading
 const lazyImages = document.querySelectorAll(".lazy");
