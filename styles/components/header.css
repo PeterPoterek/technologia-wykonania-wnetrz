@@ -227,14 +227,31 @@
 
 /* 2xl */
 @media (min-width: 1536px) {
-  .header__menu {
-    gap: 0em;
+  .header {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .header__nav {
-    gap: 2.5em;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+  .header__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__menu {
+    justify-content: center;
+    gap: 5em;
   }
   .header__phone {
     gap: 1em;
+  }
+  .header__button {
+    font-size: var(--size-lg);
   }
   .header__phoneicon {
     display: block;
