@@ -43,7 +43,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="src/main.js"></script>
   </head>
 
@@ -129,7 +133,7 @@
     </header>
 
     <main>
-      <section id="welcome" class="container section welcomesection">
+      <section id="welcome" class="animate__animated animate__fadeIn container section welcomesection">
         <div class="welcomesection__container">
           <h1 class="welcomesection__title">Technologia Wykonania Wnętrz</h1>
           <div class="welcomesection__content">
@@ -152,11 +156,11 @@
         </div>
       </section>
 
-      <section class="section bannersection">
+      <section class="animate__animated animate__fadeIn section bannersection">
         <h2 class="bannersection__text">ZADZWOŃ I OTRZYMAJ BEZPŁATNĄ WYCENĘ</h2>
       </section>
 
-      <section id="about" class="container section aboutsection">
+      <section data-aos="fade-right" id="about" class="container section aboutsection">
         <div class="about_content">
           <h2 class="about_title">O NAS</h2>
           <p class="about_description">
@@ -168,7 +172,7 @@
         </div>
       </section>
 
-      <section class="container section creationsection">
+      <section data-aos="fade-right" class="container section creationsection">
         <h2 class="creationsection__title">ETAPY TWORZENIA</h2>
         <div class="creationsection__imagelist">
           <img class="lazy loading" src="https://fakeimg.pl/384x515" data-src="./Images/stock1.png" alt="Image person of writing on sticky note" />
@@ -236,7 +240,7 @@
         </div>
       </section>
 
-      <section id="review" class="container section reviewsection">
+      <section data-aos="fade-right" id="review" class="container section reviewsection">
         <h2 class="reviewsection__title">OPINIE</h2>
         <ul class="reviewsection__list">
           <li class="reviewsection__item">
@@ -272,7 +276,7 @@
         </ul>
       </section>
 
-      <section id="contact" class="container section contactsection">
+      <section data-aos="fade-right" id="contact" class="container section contactsection">
         <h2 class="contactsection__title">KONTAKT</h2>
         <div class="contactsection__map">
           <div class="contactsection__map-border">

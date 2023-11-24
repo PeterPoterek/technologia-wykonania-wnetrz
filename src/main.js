@@ -89,3 +89,5 @@ lazyImages.forEach((img) => {
     document.body.style.overflow = "auto";
   });
 })();
+
+AOS.init();
