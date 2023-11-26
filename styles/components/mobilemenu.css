@@ -64,14 +64,18 @@
 
   gap: 3.5rem;
 }
+.mobilemenu__item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
 .mobilemenu__navitem {
   color: var(--clr-black);
   font-size: var(--size-2xl);
   font-weight: 600;
 
   text-decoration: none;
-
-  padding: 0.5rem;
 }
 .mobilemenu__closebutton {
   position: absolute;
